@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 60px;
   min-height: 100vh;
+}
+
+.main img {
+  padding: 20px;
 }
 
 .description {
@@ -89,10 +93,10 @@
   left: 50%;
   position: absolute;
   filter: blur(45px);
-  transform: translateZ(0);
+  transform: translatez(0);
 }
 
-/* Enable hover only on non-touch devices */
+/* enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
@@ -100,7 +104,7 @@
   }
 
   .card:hover span {
-    transform: translateX(4px);
+    transform: translatex(4px);
   }
 }
 
@@ -110,10 +114,10 @@
   }
 }
 
-/* Mobile */
+/* mobile */
 @media (max-width: 700px) {
   .main {
-    padding: 2rem;
+    padding: 20px;
   }
 
   .grid {
@@ -187,7 +191,7 @@
   }
 }
 
-/* Tablet and Smaller Desktop */
+/* tablet and smaller desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
@@ -195,7 +199,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .vercellogo {
     filter: invert(1);
   }
 
