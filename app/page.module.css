@@ -6,14 +6,6 @@
   padding: 60px;
 }
 
-.main img {
-  padding: 20px;
-}
-
-.main h3 {
-  margin-top: 50px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -27,9 +19,27 @@
   margin-top: 100px;
 }
 
+.project {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project img {
+  width: 50vw;
+  height: auto;
+  aspect-ratio: 3/2 auto;
+}
+
 /* mobile */
 @media (max-width: 700px) {
   .main {
     padding: 20px;
   }
+
+  .project img {
+    width: 80vw;
+    height: auto;
+    aspect-ratio: 3/2 auto;
+  }
+
 }
