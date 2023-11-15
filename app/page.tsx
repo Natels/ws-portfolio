@@ -5,7 +5,7 @@ import stickers from '../public/AnimalStickersImage.png'
 import menu from '../public/RestaurantMenuImage.png'
 import brandingPackaging from '../public/BrandLogo&PackagingImage.png'
 import brandingPattern from '../public/BrandLogo&PatternImage.png'
-import typeCard from '../public/SleevePackagingImage.png'
+import typeCard from '../public/TypeCardImage.png'
 
 export default function Home() {
   return (
