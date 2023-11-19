@@ -5,13 +5,15 @@ import aurora from '../public/SleevePackagingImage.png'
 import stickers from '../public/AnimalStickersImage.png'
 import menu from '../public/RestaurantMenuImage.png'
 import brandingPattern from '../public/BrandLogo&PatternImage.png'
+import brandingPackaging from '../public/BrandLogo&PackagingImage.png'
 import typeCard from '../public/TypeCardImage.png'
-import Header from './header'
+import header from '../public/header.png'
+import footer from '../public/footer.png'
 
 export default function Home() {
   return (
     <>
-      <Header />
+      <Image className={styles.headerLogo} src={header} alt='Logo and image of Whitney Smith' />
       <main className={[styles.main, playfair.variable].join(' ')}>
         <h1>Selected work.</h1>
         <div className={styles.project}>
@@ -54,7 +56,16 @@ export default function Home() {
             <p>I was approached by an educational game company and asked to create artwork that would be included in a deck of flash cards based on Fonts. I designed two cards based on the fonts utilising the style guide provided to me. I was able to create some simple and effective cards that express the style and attitude of each typeface. I also assembled a repeated pattern to present each typeface.</p>
           </div>
         </div>
+        <div className={styles.project}>
+          <Image src={brandingPackaging} alt='Image of candle packaging' />
+          <div className={styles.description}>
+            <h2>Brand Logo & Packaging</h2>
+            <h4>Client: Natures Candle Co.</h4>
+            <p>This logo and candle label design was made for a company I conceptualized. The brand warrants simplicity with its natural and calm products being the focus of the design. I illustrated a palm frond and played with some typeface to create a clean styled logo that connects the target audience to nature.</p>
+          </div>
+        </div>
       </main>
+      <Image className={styles.footer} src={footer} alt='Logo and image of Whitney Smith' />
     </>
   )
 }
