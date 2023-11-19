@@ -6,12 +6,26 @@
   padding: 60px;
 }
 
+.main h1,
+.main h2,
+.main h3,
+.main h4 {
+  font-family: var(--font-playfair);
+}
+
+.project h1,
+.project h2,
+.project h3,
+.project h4 {
+  color: var(--accent1)
+}
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 300px;
-  background-color: #ffffff70;
+  background-color: var(--accent2);
 }
 
 .headerLogo {

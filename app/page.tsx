@@ -1,9 +1,9 @@
 import Image from 'next/image'
+import { playfair } from '@/fonts'
 import styles from './page.module.css'
 import aurora from '../public/SleevePackagingImage.png'
 import stickers from '../public/AnimalStickersImage.png'
 import menu from '../public/RestaurantMenuImage.png'
-import brandingPackaging from '../public/BrandLogo&PackagingImage.png'
 import brandingPattern from '../public/BrandLogo&PatternImage.png'
 import typeCard from '../public/TypeCardImage.png'
 import Header from './header'
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={styles.main}>
+      <main className={[styles.main, playfair.variable].join(' ')}>
         <h2>Selected Work</h2>
         <div className={styles.project}>
           <Image src={aurora} alt='Chocolate sleeve packaging project' />
